@@ -25,7 +25,7 @@ module.exports.authorization = (req, res, next) => {
 
     logger.info(decoded);
 
-    req.user = decoded.user;
+    req.account = decoded.account;
     next();
   } catch (error) {
     logger.error(error);
