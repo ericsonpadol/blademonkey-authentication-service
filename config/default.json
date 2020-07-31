@@ -1,0 +1,7 @@
+{
+  "app": {
+    "jwt": {
+      "secret": "batman"
+    }
+  }
+}
