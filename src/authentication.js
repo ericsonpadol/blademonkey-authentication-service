@@ -5,7 +5,7 @@ const logger = require('../config/logger');
 // eslint-disable-next-line consistent-return
 module.exports.authorization = (req, res, next) => {
   // get the token from the header
-  let token = req.header.authorization;
+  let token = req.headers.authorization;
 
   logger.info(token);
 
