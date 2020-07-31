@@ -21,6 +21,8 @@ module.exports.authorization = (req, res, next) => {
   try {
     const decoded = jwt.verify(token, config.get('app.jwt.secret'));
 
+    logger.info(decoded);
+
     req.user = decoded.user;
     next();
   } catch (error) {
