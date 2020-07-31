@@ -4,7 +4,8 @@
   "description": "a global authentication service built with jsonwebtoken",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node app"
   },
   "repository": {
     "type": "git",

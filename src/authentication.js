@@ -7,6 +7,8 @@ module.exports.authorization = (req, res, next) => {
   // get the token from the header
   let token = req.header.authorization;
 
+  logger.info(token);
+
   if (!token) {
     return res.status(401).json({
       error: {
